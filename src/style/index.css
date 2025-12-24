@@ -20,8 +20,10 @@
   animation: fade-in 1s ease-out;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  background: #171c22;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

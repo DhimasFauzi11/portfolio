@@ -22,7 +22,7 @@ export default function Contact() {
             a question, or just want to connect.
           </p>
         </div>
-        <div className="w-[900px] mx-auto grid md:grid-cols-4 gap-8">
+        <div className="md:w-[900px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
           <a
             href="mailto:hikambaidawih@gmail.com"
             className="bg-[#20272f] py-8 px-2 rounded-2xl border border-[#e94234]/20 hover:border-[#e94234] hover:bg-[#20272f]/80 transition-all duration-300 transform hover:scale-105 text-center group"

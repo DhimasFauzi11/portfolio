@@ -41,7 +41,7 @@ export default function App() {
   };
 
   return (
-    <div className="bg-[#171c22] text-white font-sans">
+    <div className="bg-[#171c22] text-white font-sans overflow-x-hidden">
       <Navbar
         scrolled={scrolled}
         activeSection={activeSection}

@@ -13,7 +13,7 @@ export default function Projects({ projects }) {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-16 bg-[#00bd95]" />
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-2xl md:text-5xl font-bold text-white">
               My <span className="text-[#00bd95]">Projects</span>
             </h2>
             <div className="h-px w-16 bg-[#00bd95]" />

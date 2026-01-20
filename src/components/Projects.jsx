@@ -1,25 +1,28 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
-import picture from "../assets/fundamental-data-science.png"
 
 export default function Projects({ projects }) {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center py-20 relative"
+      className="min-h-screen flex items-center py-20 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-[#20272f] to-[#171c22]" />
+      {/* background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10] via-[#151518] to-[#0e0e10]" />
+      <div className="absolute -top-32 -left-32 w-[420px] h-[420px] bg-[#ea580c]/15 blur-3xl rounded-full" />
+      <div className="absolute -bottom-32 -right-32 w-[520px] h-[520px] bg-[#dc2626]/10 blur-3xl rounded-full" />
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="h-px w-16 bg-[#00bd95]" />
+            <div className="h-px w-16 bg-gradient-to-r from-[#dc2626] via-[#ea580c] to-[#f59e0b]" />
             <h2 className="text-2xl md:text-5xl font-bold text-white">
-              My <span className="text-[#00bd95]">Projects</span>
+              My <span className="text-[#ea580c]">Projects</span>
             </h2>
-            <div className="h-px w-16 bg-[#00bd95]" />
+            <div className="h-px w-16 bg-gradient-to-l from-[#dc2626] via-[#ea580c] to-[#f59e0b]" />
           </div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Projects i have Built
+            Projects I have Built
           </p>
         </div>
 
@@ -27,9 +30,14 @@ export default function Projects({ projects }) {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-[#20272f] rounded-2xl overflow-hidden border border-[#00bd95]/20 hover:border-[#00bd95] transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-[#00bd95]/20"
+              className="bg-[#1f1f23]/80 rounded-2xl overflow-hidden
+                         border border-[#ea580c]/20
+                         hover:border-[#ea580c]
+                         transition-all duration-300
+                         transform hover:scale-105
+                         hover:shadow-2xl hover:shadow-[#ea580c]/30"
             >
-              <div className="h-56 bg-gradient-to-br from-[#00bd95]/20 to-[#00bd95]/5 flex items-center justify-center">
+              <div className="h-56 bg-gradient-to-br from-[#ea580c]/25 to-transparent flex items-center justify-center">
                 <img src={project.image} alt="" className="h-fit" />
               </div>
 
@@ -46,20 +54,25 @@ export default function Projects({ projects }) {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-[#00bd95]/20 text-[#00bd95] rounded text-xs"
+                      className="px-2 py-1 bg-[#ea580c]/20 text-[#ea580c]
+                                 rounded text-xs"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex justify-between items-center pt-4 border-t border-[#00bd95]/20">
-                  <span className="text-gray-500 text-sm">{project.date}</span>
+                <div className="flex justify-between items-center pt-4 border-t border-[#ea580c]/20">
+                  <span className="text-gray-500 text-sm">
+                    {project.date}
+                  </span>
 
                   <a
                     href={project.github}
-                    className="flex items-center space-x-2 text-[#00bd95] hover:text-white transition-colors"
+                    className="flex items-center space-x-2 text-[#ea580c] hover:text-white transition-colors"
                     aria-label={`Open ${project.title} repository`}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <Github size={18} />
                     <ExternalLink size={18} />

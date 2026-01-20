@@ -1,17 +1,16 @@
 .animate-charcter {
   background-image: linear-gradient(
     -225deg,
-    #108c71 0%,
-    #00bd95 29%,
-    #19a7d2ca 80%,
-    #00bd95 100%
+    #dc2626,
+    #ea580c,
+    #f97316,
+    #f59e0b,
+    #ea580c
   );
-  background-size: auto auto;
-  background-clip: border-box;
+
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;

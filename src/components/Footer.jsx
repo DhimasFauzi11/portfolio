@@ -3,12 +3,14 @@ import { Github, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#20272f] border-t border-[#00bd95]/20 py-8">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+    <footer className="bg-gradient-to-t from-[#0e0e10] to-[#1a1a1f] border-t border-[#ea580c]/30 py-8 relative overflow-hidden">
+      {/* subtle glow */}
+      <div className="absolute inset-x-0 -top-20 h-40 bg-[#ea580c]/10 blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <p className="text-gray-400">
-          © 2025 M. Hikam Baidawih. Built with React & Tailwind CSS.
+          © 2025 <span className="text-[#ea580c] font-semibold">Dhimas Fauzi</span>. Built with React & Tailwind CSS.
         </p>
-        
       </div>
     </footer>
   );

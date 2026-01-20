@@ -1,84 +1,134 @@
-import React from "react";
-import { Linkedin, Mail, Phone, Instagram, Github } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center py-10 relative"
+      className="min-h-screen flex items-center py-10 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-[#171c22]" />
+      {/* background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0e0e10] via-[#151518] to-[#0e0e10]" />
+      <div className="absolute -top-32 -left-32 w-[420px] h-[420px] bg-[#ea580c]/15 blur-3xl rounded-full" />
+      <div className="absolute -bottom-32 -right-32 w-[520px] h-[520px] bg-[#dc2626]/10 blur-3xl rounded-full" />
+
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="h-px w-16 bg-[#00bd95]" />
+            <div className="h-px w-16 bg-gradient-to-r from-[#dc2626] via-[#ea580c] to-[#f59e0b]" />
             <h2 className="text-2xl md:text-5xl font-bold text-white">
-              Get In <span className="text-[#00bd95]">Touch</span>
+              Get In <span className="text-[#ea580c]">Touch</span>
             </h2>
-            <div className="h-px w-16 bg-[#00bd95]" />
+            <div className="h-px w-16 bg-gradient-to-l from-[#dc2626] via-[#ea580c] to-[#f59e0b]" />
           </div>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Feel free to reach out if you want to collaborate on a project, have
             a question, or just want to connect.
           </p>
         </div>
+
         <div className="md:w-[900px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+          {/* Email */}
           <a
-            href="mailto:hikambaidawih@gmail.com"
-            className="bg-[#20272f] py-8 px-2 rounded-2xl border border-[#e94234]/20 hover:border-[#e94234] hover:bg-[#20272f]/80 transition-all duration-300 transform hover:scale-105 text-center group"
+            href="mailto:dhimas.fauziw@gmail.com"
+            className="bg-[#1f1f23]/80 py-8 px-2 rounded-2xl
+                       border border-[#ea580c]/20
+                       hover:border-[#ea580c]
+                       hover:bg-[#1f1f23]/90
+                       transition-all duration-300
+                       transform hover:scale-105
+                       text-center group"
           >
-            <div className="w-16 h-16 bg-[#e94234]/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#e94234] transition-all duration-300">
+            <div className="w-16 h-16 bg-[#ea580c]/20 rounded-full flex items-center justify-center mx-auto mb-4
+                            group-hover:bg-[#ea580c] transition-all duration-300">
               <Mail
                 size={28}
-                className="text-[#e94234] group-hover:text-white"
+                className="text-[#ea580c] group-hover:text-white"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Email</h3>
+            <h3 className="text-lg font-semibold mb-2 text-white">
+              Email
+            </h3>
             <p className="text-gray-400 text-sm break-all">
-              hikambaidawih@gmail.com
+              dhimas.fauziw@gmail.com
             </p>
           </a>
 
+          {/* Github */}
           <a
-            href="https://github.com/hikambdwh"
-            className="bg-[#20272f] p-8 rounded-2xl border border-[#00bd95]/20 hover:border-[#00bd95] hover:bg-[#20272f]/80 transition-all duration-300 transform hover:scale-105 text-center group"
+            href="https://github.com/DhimasFauzi11"
+            className="bg-[#1f1f23]/80 p-8 rounded-2xl
+                       border border-[#ea580c]/20
+                       hover:border-[#ea580c]
+                       hover:bg-[#1f1f23]/90
+                       transition-all duration-300
+                       transform hover:scale-105
+                       text-center group"
           >
-            <div className="w-16 h-16 bg-[#00bd95]/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#00bd95] transition-all duration-300">
+            <div className="w-16 h-16 bg-[#ea580c]/20 rounded-full flex items-center justify-center mx-auto mb-4
+                            group-hover:bg-[#ea580c] transition-all duration-300">
               <Github
                 size={28}
-                className="text-[#00bd95] group-hover:text-white"
+                className="text-[#ea580c] group-hover:text-white"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Github</h3>
-            <p className="text-gray-400 text-sm">Checkout my Github Profile</p>
+            <h3 className="text-lg font-semibold mb-2 text-white">
+              Github
+            </h3>
+            <p className="text-gray-400 text-sm">
+              Checkout my Github Profile
+            </p>
           </a>
 
+          {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/hikambaidawih/"
-            className="bg-[#20272f] p-8 rounded-2xl border border-[#0a66c2]/20 hover:border-[#0a66c2] hover:bg-[#20272f]/80 transition-all duration-300 transform hover:scale-105 text-center group"
+            href="https://id.linkedin.com/in/dhimas-fauzi-wiratama-0551303a7"
+            className="bg-[#1f1f23]/80 p-8 rounded-2xl
+                       border border-[#ea580c]/20
+                       hover:border-[#ea580c]
+                       hover:bg-[#1f1f23]/90
+                       transition-all duration-300
+                       transform hover:scale-105
+                       text-center group"
           >
-            <div className="w-16 h-16 bg-[#0a66c2]/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#0a66c2] transition-all duration-300">
+            <div className="w-16 h-16 bg-[#ea580c]/20 rounded-full flex items-center justify-center mx-auto mb-4
+                            group-hover:bg-[#ea580c] transition-all duration-300">
               <Linkedin
                 size={28}
-                className="text-[#0a66c2] group-hover:text-white"
+                className="text-[#ea580c] group-hover:text-white"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">LinkedIn</h3>
-            <p className="text-gray-400 text-sm">Connect with me</p>
+            <h3 className="text-lg font-semibold mb-2 text-white">
+              LinkedIn
+            </h3>
+            <p className="text-gray-400 text-sm">
+              Connect with me
+            </p>
           </a>
 
+          {/* Instagram */}
           <a
-            href="https://www.instagram.com/he_comee?igsh=MXQ5Y2tjNTBxbWxiOQ=="
-            className="bg-[#20272f] p-8 rounded-2xl border border-[#ff4b60]/20 hover:border-[#ff4b60] hover:bg-[#20272f]/80 transition-all duration-300 transform hover:scale-105 text-center group"
+            href="https://www.instagram.com/masss.ee?igsh=MXQ5Y2tjNTBxbWxiOQ=="
+            className="bg-[#1f1f23]/80 p-8 rounded-2xl
+                       border border-[#ea580c]/20
+                       hover:border-[#ea580c]
+                       hover:bg-[#1f1f23]/90
+                       transition-all duration-300
+                       transform hover:scale-105
+                       text-center group"
           >
-            <div className="w-16 h-16 bg-[#ff4b60]/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#ff4b60] transition-all duration-300">
+            <div className="w-16 h-16 bg-[#ea580c]/20 rounded-full flex items-center justify-center mx-auto mb-4
+                            group-hover:bg-[#ea580c] transition-all duration-300">
               <Instagram
                 size={28}
-                className="text-[#ff4b60] group-hover:text-white"
+                className="text-[#ea580c] group-hover:text-white"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Instagram</h3>
-            <p className="text-gray-400 text-sm">Se my instagram profile</p>
+            <h3 className="text-lg font-semibold mb-2 text-white">
+              Instagram
+            </h3>
+            <p className="text-gray-400 text-sm">
+              See my instagram profile
+            </p>
           </a>
         </div>
       </div>

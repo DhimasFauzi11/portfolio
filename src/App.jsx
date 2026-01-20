@@ -7,9 +7,8 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Certifications from "./components/Certifications";
 
-import { skills, projects, certifications } from "./data/portfolioData";
+import { skills, projects } from "./data/portfolioData";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -51,7 +50,6 @@ export default function App() {
       <Hero onScrollTo={scrollToSection} />
       <About />
       <Skills skills={skills} />
-      <Certifications certifications={certifications} />
       <Projects projects={projects} />
       <Contact />
       <Footer />

@@ -1,146 +1,116 @@
-import { CodeXml, TextSearch, BriefcaseBusiness, Database, Component, ToolCase } from "lucide-react";
-import fundamentalPython from "../assets/fundamental-python.png"
-import fundamentalDataScience from "../assets/fundamental-data-science.png"
-import dataScienceIntermediate from "../assets/data-science-intermediate.png"
-import visualisiData from "../assets/visualisasi-data.png"
-import customerChurn from "../assets/customer-churn.png"
-import expertSystem from "../assets/expert-system-malaria.png"
-import landingPage from "../assets/ekraf.png";
-import plantWatering from "../assets/Plant-Watering-System.jpeg"
-import vgsales from "../assets/videogames-sales.png"
-import agentAi from "../assets/agent-ai.png"
+import {
+  Brain,
+  Cpu,
+  Globe
+} from "lucide-react";
+
+
+import pestInvasion from "../assets/pest_invasion.jpg";
+import pilahin from "../assets/pilahin.png";
+import minatBakat from "../assets/minatbakat.png";
+import converter from "../assets/mp3converter.png";
+import plantWatering from "../assets/Plant-Watering-System.jpeg";
+import sitbul from "../assets/sitbulweb.png";
+import robotics from "../assets/Robot.jpg";
+import waste from "../assets/smartwaste.jpg";
 
 export const skills = [
   {
-    category: "Programming",
-    icon: CodeXml,
+    category: "Front-End & Web",
+    icon: Globe,
     items: [
-      "Python",
       "HTML",
       "CSS",
       "JavaScript",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Seaborn",
+      "ReactJS",
       "Tailwind",
-      "Bootstrap",
-      "React.Js",
+      "Streamlit",
     ],
   },
   {
-    category: "Data Analytics",
-    icon: TextSearch,
-    items: ["EDA", "Data Cleaning", "Statistical Analysis"],
+    category: "AI & ML",
+    icon: Brain,
+    items: ["EDA", "Data Cleaning", "Statistical Analysis", "Predictive Modeling"],
   },
   {
-    category: "Business Intelligence",
-    icon: BriefcaseBusiness,
-    items: ["Power BI", "Tableau"],
-  },
-  {
-    category: "Database",
-    icon: Database,
-    items: ["SQL", "MySQL"],
-  },
-  {
-    category: "Design & UI/UX",
-    icon: Component,
-    items: ["Figma"],
-  },
-  {
-    category: "Tools",
-    icon: ToolCase,
-    items: ["Excel", "Git", "VS Code"],
+    category: "Mechatronics & IoT",
+    icon: Cpu,
+    items: ["C++ / Embedded C", "ESP32 / Arduino", "Robotics", "3D Modeling"],
   },
 ];
-
-export const certifications = [
-  {
-    title: "Fundamental Python",
-    issuer: "Coding Studio",
-    date: "2025",
-    image: fundamentalPython,
-    credentialUrl: "https://member.codingstudio.id/certificate/CeBs870Gzb",
-  },
-  {
-    title: "Fundamental Data Science",
-    issuer: "Coding Studio",
-    date: "2025",
-    image: fundamentalDataScience,
-    credentialUrl: "https://member.codingstudio.id/certificate/ZWxqN6jB6y",
-  },
-  {
-    title: "Data Science Intermediate",
-    issuer: "Coding Studio",
-    date: "2025",
-    image: dataScienceIntermediate,
-    credentialUrl: "https://member.codingstudio.id/certificate/LokhcoReiw",
-  },
-  {
-    title: "Visualisasi Data",
-    issuer: "Dicoding",
-    date: "2025",
-    image: visualisiData,
-    credentialUrl: "https://www.dicoding.com/certificates/07Z6378LYZQR",
-  },
-];
-
 
 export const projects = [
   {
-    title: "Customer Churn Prediction",
+    title: "Smart Waste Monitoring",
     description:
-      "Performed EDA and derived business insights on the Telco Customer Churn dataset of 7,000+ customers. Trained Random Forest Classifier and Logistic Regression models.",
-    tech: ["Python", "Machine Learning", "EDA"],
+      "IoT-based waste sorting system using inductive/capacitive sensors. Integrated Machine Learning (Random Forest) for fullness prediction and an Expert System to determine waste transport necessity.",
+    tech: ["IoT", "ESP32", "Random Forest", "Fuzzy Logic", "Streamlit", "Firebase"],
     date: "November 2025",
-    github: "https://github.com/hikambdwh/customer_churn",
-    image: customerChurn,
+    github: "https://github.com/DhimasFauzi11?tab=repositories",
+    image: waste,
   },
   {
-    title: "Video Game Sales – Dashboard & Predictive Analytics",
+    title: "Line Follower and Firefighter Robot",
     description:
-      "Performed data cleaning and EDA to understand sales distribution, outliers, and trends. Designed interactive dashboards using Streamlit and Tableau.",
-    tech: ["Python", "Streamlit", "Tableau"],
+      "Autonomous robot powered by Arduino Uno and ESP8266. Utilizes OpenCV for advanced fire detection and PID control for precise line tracking and fan actuation.",
+    tech: ["ArduinoUNO", "ESP32", "OpenCV", "Robotics", "PID"],
+    date: "November 2025",
+    github: "https://github.com/DhimasFauzi11?tab=repositories",
+    image: robotics,
+  },
+  {
+    title: "Situ Buleud Food Market Website",
+    description:
+      "Develop a digital directory for Situ Buleud Food Market using React.js and Tailwind CSS. Integrated Supabase as the backend for menu data and authentication, enabling secure CRUD operations.",
+    tech: ["ReactJS", "TailwindCSS", "Supabase"],
+    date: "November 2025",
+    github: "https://github.com/DhimasFauzi11?tab=repositories",
+    image: sitbul,
+  },
+  {
+    title: "Identifying Students Special Interests and Talents ",
+    description:
+      "Implemented an expert system based on the Certainty Factor method using Python and Flask, designing system logic to calculate confidence levels of students’ interests and talents from structured user responses, and developing a simple web-based interface with HTML and CSS to display the identification results.",
+    tech: ["Certainty Factor", "Expert Systems", "Python", "JSON"],
     date: "October 2025",
-    github: "https://github.com/hikambdwh/video_games_sales",
-    image: vgsales,
+    github: "https://github.com/DhimasFauzi11?tab=repositories",
+    image: minatBakat,
   },
   {
-    title: "Expert System for Malaria Detection",
+    title: "CHATBOT: YT to MP3 Converter",
     description:
-      "Built a web-based expert system with Python Flask backend. Implemented certainty factor method for diagnostic confidence.",
-    tech: ["HTML", "CSS", "JavaScript", "Flask"],
+      "Developed a CLI-based personal assistant using Python for a YouTube to MP3 converter, featuring automatic video conversion, file renaming, and saving MP3 outputs directly to the local download directory.",
+    tech: ["Python", "Command Line", "API"],
     date: "July 2025",
-    github: "https://github.com/hikambdwh/Sistem-Pakar",
-    image: expertSystem,
+    github: "https://github.com/DhimasFauzi11?tab=repositories",
+    image: converter,
   },
   {
-    title: "Landing Page Ekraf Purwakarta",
+    title: "Pilah.In",
     description:
-      "Develop a landing page website for the Purwakarta Creative Economy Committee using HTML, CSS, JavaScript, and the Tailwind framework for front-end design.",
-    tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-    date: "July 2025",
-    github: "https://github.com/hikambdwh/website-ekraf-1",
-    image: landingPage,
+      "Designed a user-centered UI/UX prototype in Figma based on research findings, creating an intuitive user flow and delivering a design solution focused on improving efficiency and organization in the waste management process.",
+    tech: ["Python", "Machine Learning", "EDA"],
+    date: "June 2025",
+    github: "https://github.com/DhimasFauzi11?tab=repositories",
+    image: pilahin,
   },
   {
-    title: "Plant Watering System",
+    title: "Smart Plant Watering System",
     description:
       "Develop an IoT system that can automatically water plants based on the soil moisture level or pH value detected in the soil. The system uses an ESP8266 as the microcontroller and a 5V DC pump as the actuator, with a motor driver to control the pump speed.",
     tech: ["ESP8266", "PYQT", "Hardware", "Electrical Wiring"],
-    date: "July 2025",
+    date: "December 2024",
     github: "#",
     image: plantWatering,
   },
   {
-    title: "CLI AI Agent: Smart Folder Sorter + PDF Summarizer",
+    title: "Pest Invasion: Plants vs Zombies",
     description:
-      "I built a CLI-based AI Agent in Python to automate file and document workflows. The app can tidy up an assignment/work folder by sorting files into categories (Word, Worksheet, PDF, Image), and it also includes a PDF Summarizer that extracts text from PDFs and generates summaries using an LLM via the OpenRouter API.",
-    tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-    date: "July 2025",
+      "Built a mini replica of the Plant vs Zombie game using Java (OOP principles). Practiced class design, inheritance, and polymorphism concepts. Designed a decoupled User Interface (UI) using FXML to separate presentation from logic.",
+    tech: ["Java", "JavaFX", "FXML", "OOP", "UI/UX"],
+    date: "October 2024",
     github:
-      "https://github.com/hikambdwh/CLI-AI-Agent-Smart-Folder-Sorter-PDF-Summarizer",
-    image: agentAi,
+      "https://github.com/DhimasFauzi11?tab=repositories",
+    image: pestInvasion,
   },
 ];

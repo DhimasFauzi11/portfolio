@@ -22,7 +22,7 @@
 
 html, body {
   scroll-behavior: smooth;
-  background: #171c22;
+  background: #0f0a1a; /* dark purple-black */
   overflow-x: hidden;
 }
 
@@ -31,15 +31,26 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #171c22;
+  background: #0f0a1a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00bd95;
+  background: linear-gradient(
+    180deg,
+    #a855f7,
+    #d946ef,
+    #ec4899
+  );
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00a080;
+  background: linear-gradient(
+    180deg,
+    #9333ea,
+    #c026d3,
+    #db2777
+  );
 }
+
 

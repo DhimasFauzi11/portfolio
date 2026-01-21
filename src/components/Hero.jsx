@@ -74,7 +74,7 @@ export default function Hero({ onScrollTo }) {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/10Ibmy-ICzqnaMnS7bS5RMo6Op1nZ744Q/view?usp=sharing"
+                href="https://drive.google.com/file/d/15_pP2tdiquH2_wnSqs4vT6pD78H-YMyI/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="View Curriculum Vitae PDF"

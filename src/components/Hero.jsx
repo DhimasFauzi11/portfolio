@@ -64,7 +64,7 @@ export default function Hero({ onScrollTo }) {
 
             {/* CTA */}
             <div className="flex gap-9 pt-4">
-              <a href="https://id.linkedin.com/in/dhimas-fauzi-wiratama-0551303a7">
+              <a href="https://www.linkedin.com/in/dhimas-fauzi-8a088a3a7">
                 <button className="flex items-center gap-2 px-4 md:px-8 py-3 rounded-lg font-semibold
                   transition-all duration-300 transform hover:scale-105 hover:shadow-xl
                   bg-gradient-to-r from-[#dc2626] via-[#ea580c] to-[#f59e0b] text-white">

@@ -81,7 +81,7 @@ export default function Contact() {
 
           {/* LinkedIn */}
           <a
-            href="https://id.linkedin.com/in/dhimas-fauzi-wiratama-0551303a7"
+            href="https://www.linkedin.com/in/dhimas-fauzi-8a088a3a7"
             className="bg-[#1f1f23]/80 p-8 rounded-2xl
                        border border-[#ea580c]/20
                        hover:border-[#ea580c]
